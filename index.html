@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form onsubmit="savetocloud(event)">
+        <h1>Products</h1>
+        <label>Selling Price:</label><br>
+        <input type="number" name="sellno" id="sellpricetag" required/><br><br>
+        <label>Product Name:</label><br>
+        <input type="text" name="product" id="productnametag" required/><br><br>
+        <button class="btn btn-primary">Submit</button>
+    </form>
+    <ul id='Listofusers'></ul>
+    <h2 id="TotalCost">Total Cost: $0</h2>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
